@@ -1,0 +1,38 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.page {
+    column-count: 2;
+    break-after: page;
+}
+
+.item {
+    display: flex;
+    flex-flow: nowrap;
+    break-inside: avoid;
+    border: 1px solid black;
+    border-top: 0px;
+    font-size: 12px;
+}
+
+.item .code {
+    padding-left: 10px;
+    padding-right: 20px;
+}
+
+@page {
+    size: a4;
+}
+
+@media print {
+    body {
+        margin: 0;
+    }
+}

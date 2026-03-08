@@ -1,0 +1,17 @@
+{
+  "name": "scale-code",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "esbuild ./src/script.js --minify --bundle --outfile=build/out.js",
+    "watch": "esbuild ./src/script.js --watch --bundle --outfile=build/out.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "esbuild": "^0.27.3"
+  }
+}
