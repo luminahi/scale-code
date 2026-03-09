@@ -6,6 +6,8 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: rgb(222, 255, 174);
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .page {
@@ -19,20 +21,100 @@ body {
     break-inside: avoid;
     border: 1px solid black;
     border-top: 0px;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .item .code {
+    font-weight: bold;
     padding-left: 10px;
     padding-right: 20px;
 }
 
 @page {
     size: a4;
+    margin: 5px;
+}
+
+.item:nth-child(even) {
+    background-color: rgb(207, 207, 207);
 }
 
 @media print {
     body {
         margin: 0;
     }
+
+    .item:nth-child(even) {
+    background-color: rgb(207, 207, 207);
+}
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+h1 {
+    text-align: center;
+    margin: 80px;
+    font-size: 48px;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 32px;
+    width: 720px;
+    margin-inline: auto;
+}
+
+.fileinput {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 48px auto;
+    text-align: center;
+}
+
+.fileinput,
+button {
+    border: none;
+    width: 192px;
+    height: 96px;
+    font-size: 24px;
+    font-family: 'Courier New', Courier, monospace;
+    cursor: pointer;
+    border-radius: 24px;
+    background-color: lightgray;
+    font-weight: bold;
+    box-shadow: 0px 8px gray;
+}
+
+.fileinput:hover,
+button:hover {
+  background-color: rgb(180, 180, 180);
+  position: relative;
+  box-shadow: 0px 3px gray;
+  top: 5px;
+}
+
+#acougue {
+    background-color: rgb(255, 98, 98);
+}  
+
+#frios {
+    background-color: aqua;
+}
+
+#salgados {
+    background-color: rgb(255, 160, 83);
+}
+
+#padaria {
+    background-color: rgb(255, 206, 46);
 }

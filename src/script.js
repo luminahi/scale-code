@@ -8,7 +8,7 @@ const friosBtn = document.getElementById("frios");
 const salgadosBtn = document.getElementById("salgados");
 const padariaBtn = document.getElementById("padaria");
 
-function printInNewWindow(sectionMap) {
+function printInNewWindow(sectionMap, section) {
   const newWindow = window.open("", "", "");
   newWindow.document.writeln(`
     <html>
@@ -17,6 +17,7 @@ function printInNewWindow(sectionMap) {
         <link rel="stylesheet" href="./src/style.css">
       </head>
       <body>
+        <h2>${section}</h2>
       </body>
     </html>
   `);
@@ -98,9 +99,17 @@ function parseData(data) {
     setSection(salgadosLines, salgadosMap);
     setSection(padariaLines, padariaMap);
 
-    acougueBtn.addEventListener("click", () => printInNewWindow(acougueMap));
-    friosBtn.addEventListener("click", () => printInNewWindow(friosMap));
-    salgadosBtn.addEventListener("click", () => printInNewWindow(salgadosMap));
-    padariaBtn.addEventListener("click", () => printInNewWindow(padariaMap));
+    acougueBtn.addEventListener("click", () =>
+      printInNewWindow(acougueMap, "Açougue")
+    );
+    friosBtn.addEventListener("click", () =>
+      printInNewWindow(friosMap, "Laticínios")
+    );
+    salgadosBtn.addEventListener("click", () =>
+      printInNewWindow(salgadosMap, "Salgados")
+    );
+    padariaBtn.addEventListener("click", () =>
+      printInNewWindow(padariaMap, "Padaria")
+    );
   }
 }
