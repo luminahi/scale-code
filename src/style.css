@@ -10,6 +10,16 @@ body {
     font-family: 'Courier New', Courier, monospace;
 }
 
+.main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+
 .page {
     column-count: 2;
     break-after: page;
@@ -57,8 +67,9 @@ body {
 }
 
 h1 {
+    margin: 0;
+    padding: 0;
     text-align: center;
-    margin: 80px;
     font-size: 48px;
 }
 

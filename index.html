@@ -6,26 +6,29 @@
     <link href="./src/style.css" rel="stylesheet" />
     <title>Códigos de Balança</title>
   </head>
-  <body>
+  <body class="main">
+    <div class="container">
+      <h1>Códigos de Balança</h1>
+
+        <p>Clique no botão abaixo para selecionar o 
+          arquivo de balança gerado pelo aplicativo <strong>Interface</strong>.
+        </p>
+
+        <label class="fileinput">Arquivo de Balança
+          <input hidden type="file" id="code-input">
+        </label>
     
-    <h1>Códigos de Balança</h1>
+        <p>Gere uma página com os códigos de balança do setor escolhido. 
+          Abrirá em uma nova janela com o formato padrão A4. 
+          Caso a caixa de diálogo não abra, use <strong>CTRL + P</strong>.
+        </p>
 
-    <p>Clique no botão abaixo para selecionar o 
-        arquivo de balança gerado pelo aplicativo <strong>Interface</strong>.</p>
-
-    <label class="fileinput">Arquivo de Balança
-            <input hidden type="file" id="code-input">
-    </label>
-    
-    <p>Gere uma página com os códigos de balança do setor escolhido. 
-        Abrirá em uma nova janela com o formato padrão A4. 
-        Caso a caixa de diálogo não abra, use <strong>CTRL + P</strong>.</p>
-
-    <div class="buttons">
-        <button id="acougue">Açougue</button>
-        <button id="frios">Frios e Laticínios</button>
-        <button id="salgados">Salgados</button>
-        <button id="padaria">Padaria</button>
+        <div class="buttons">
+            <button id="acougue">Açougue</button>
+            <button id="frios">Frios e Laticínios</button>
+            <button id="salgados">Salgados</button>
+            <button id="padaria">Padaria</button>
+        </div>
     </div>
 
     </body>
